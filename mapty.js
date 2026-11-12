@@ -112,6 +112,21 @@ class App {
   _newWorkout(e) {
     e.preventDefault();
 
+    // Get data from form
+
+    // Check if data is valid
+
+    // If workout running, create running object
+
+    // if workout cycling, create cycling object
+
+    // Add new workout object
+
+    // Render workout on map as marker
+
+    // Render workout as list
+
+    // Hide form + clear input in fields
     inputDistance.value =
       inputDuration.value =
       inputCadence.value =
