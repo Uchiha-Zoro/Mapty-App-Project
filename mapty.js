@@ -55,6 +55,7 @@ class Cycling extends Workout {
 
 /////////////////////////////////////////////////////////
 // Application Architecture
+
 class App {
   #map;
   #mapEvent;
