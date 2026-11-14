@@ -199,6 +199,9 @@ class App {
 
     // Hide form + clear input in fields
     this._hideForm();
+
+    // Set local storge to all workouts
+    this._setLocalStorage();
   }
 
   _renderWorkoutMarker(workout) {
@@ -281,8 +284,12 @@ class App {
       },
     });
 
-    // using the public interface
+    // using the public interfacev
     workout.click();
+  }
+
+  _setLocalStorage() {
+    localStorage.setItem('workouts', JSON.stringify(this.#workouts));
   }
 }
 
