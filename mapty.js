@@ -197,7 +197,6 @@ class App {
 
     // Add new object to workout array
     this.#workouts.push(workout);
-    console.log(workout);
 
     // Render workout on map as marker
     this._renderWorkoutMarker(workout);
@@ -293,7 +292,7 @@ class App {
     });
 
     // using the public interfacev
-    workout.click();
+    // workout.click();
   }
 
   _setLocalStorage() {
@@ -302,7 +301,6 @@ class App {
 
   _getLocalStorage() {
     const data = JSON.parse(localStorage.getItem('workouts'));
-    console.log(data);
 
     if (!data) return;
 
